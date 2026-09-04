@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasta Vino – Italiensk restaurant i Sandviken, Bergen</title>
+<meta name="description" content="Pasta Vino er et varmt og uformelt trattoria i Sandviken. Fersk pasta, gode råvarer og ekte italienske smaker, laget fra bunnen hver dag. Book bord i dag.">
+<meta name="theme-color" content="#141618">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<meta property="og:title" content="Pasta Vino – Italiensk restaurant i Sandviken, Bergen">
+<meta property="og:description" content="Fersk pasta, gode råvarer og ekte italienske smaker. Et naturlig stopp i Sandviken.">
+<meta property="og:image" content="assets/hero-interior.jpg">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="#" class="logo-link" aria-label="Pasta Vino, til toppen">
+      <img src="assets/logo-white.png" alt="Pasta Vino" class="logo-img">
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <button class="nav-close" id="navClose" aria-label="Lukk meny">&times;</button>
+      <ul>
+        <li><a href="#meny" class="nav-link">Meny</a></li>
+        <li><a href="#om-oss" class="nav-link">Om oss</a></li>
+        <li><a href="#besok" class="nav-link">Åpningstider</a></li>
+        <li><a href="https://givn.no/shop/pastavino" class="nav-link" target="_blank" rel="noopener">Kjøp gavekort</a></li>
+        <li class="nav-cta-mobile"><a href="https://booking.gastroplanner.no/pastavino/t" class="btn btn-accent" target="_blank" rel="noopener">Book bord</a></li>
+      </ul>
+    </nav>
+    <a href="https://booking.gastroplanner.no/pastavino/t" class="btn btn-accent nav-cta" target="_blank" rel="noopener">Book bord</a>
+    <button class="hamburger" id="hamburger" aria-label="Åpne meny" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" id="navScrim"></div>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <img src="assets/hero-interior.jpg" alt="Interiør hos Pasta Vino i Sandviken" width="2160" height="1690">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <p class="hero-kicker reveal">Sandviken, Bergen</p>
+      <h1 class="hero-title reveal">Fersk pasta.<br><span class="accent-text">Ekte italiensk</span> stemning.</h1>
+      <p class="hero-lead reveal">Pasta Vino er et hverdagssted med god mat, god stemning og litt italiensk sjel. Et naturlig stopp i Sandviken.</p>
+      <div class="hero-actions reveal">
+        <a href="https://booking.gastroplanner.no/pastavino/t" class="btn btn-accent btn-lg" target="_blank" rel="noopener">Book bord</a>
+        <a href="#meny" class="btn btn-ghost btn-lg">Se menyen</a>
+      </div>
+    </div>
+    <a href="#om-oss" class="scroll-cue" aria-label="Scroll ned">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="about" id="om-oss">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="assets/antipasti-board.jpg" alt="Antipastitallerken med parmaskinke, oliven og ost hos Pasta Vino" loading="lazy" width="900" height="1201">
+        <div class="about-media-frame"></div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow reveal">Om Pasta Vino</p>
+        <h2 class="reveal">Et varmt og uformelt møtested</h2>
+        <p class="reveal">Et varmt og uformelt møtested hvor fersk pasta, gode råvarer og ekte italienske smaker står i sentrum. Hos oss får du hjemmelagde retter laget med kjærlighet, inspirert av tradisjonelle italienske kjøkken.</p>
+        <p class="reveal">Hos Pasta Vino handler det om mer enn bare mat. Vi ønsker å skape en avslappet atmosfære hvor venner, familier og naboer kan samles rundt gode smaker og hyggelige øyeblikk. Fra kremet carbonara og fersk tagliatelle til klassiske italienske kjøttretter og hjemmelagde desserter, lager vi maten fersk hver dag med nøye utvalgte råvarer.</p>
+        <a href="#meny" class="text-link reveal">Utforsk menyen &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="meny">
+    <div class="container">
+      <p class="eyebrow eyebrow-light reveal">Vår meny</p>
+      <h2 class="section-title-light reveal">Klassiske italienske retter</h2>
+
+      <div class="menu-tabs reveal" role="tablist">
+        <button class="menu-tab is-active" data-tab="antipasti" role="tab" aria-selected="true">Antipasti</button>
+        <button class="menu-tab" data-tab="pasta" role="tab" aria-selected="false">Pasta</button>
+        <button class="menu-tab" data-tab="dessert" role="tab" aria-selected="false">Dessert</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel is-active" data-panel="antipasti" role="tabpanel">
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Caprese med mozzarella og fire tomatsorter</h3><span class="price">259 KR</span></div>
+            <p>Kremet bøffelmozzarella servert med fire tomatsorter: ramato, gul cherrytomat, datterino og grønn tomat.</p>
+            <p class="allergens">Allergener: Melk</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Bruschetta</h3><span class="price">239 KR</span></div>
+            <p>Ristet focaccia toppet med fire tomatsorter: ramato, datterino og grønn tomat, røkt scamorza-fondue, gul tomatkrem og cucunci (store kapersbær).</p>
+            <p class="allergens">Allergener: Gluten, melk</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Sauterte blåskjell</h3><span class="price">289 KR</span></div>
+            <p>Ferske blåskjell sautert med cherrytomater og servert med focaccia. Delikate smaker av sjømat balansert med naturlig sødme.</p>
+            <p class="allergens">Allergener: Bløtdyr, gluten</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Tunfisk med siciliansk pesto</h3><span class="price">295 KR</span></div>
+            <p>Stekt tunfisk med siciliansk pesto, gul cherrytomatsaus, fennikelpesto og sprø kapers.</p>
+            <p class="allergens">Allergener: Fisk, nøtter (pistasj), sulfitt</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Røkt blekksprutsalat med potetkrem</h3><span class="price">295 KR</span></div>
+            <p>Blekksprut servert med røkt salat og kremet potetpuré.</p>
+            <p class="allergens">Allergener: Bløtdyr, sulfitt, melk</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Focaccia med pulled chicken</h3><span class="price">259 KR</span></div>
+            <p>Focaccia med pulled chicken, trøffelpotetkrem og røkt scamorza-fondue.</p>
+            <p class="allergens">Allergener: Gluten, melk</p>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="pasta" role="tabpanel" hidden>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Busiate Norma</h3><span class="price">329 KR</span></div>
+            <p>Fersk busiate med aubergine, tomatsaus, saltet ricotta og basilikumolje. En tradisjonell siciliansk favoritt.</p>
+            <p class="allergens">Allergener: Gluten, melk</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Gnocchi Amatriciana</h3><span class="price">349 KR</span></div>
+            <p>Potetgnocchi med sprøstekt guanciale, tomatsaus, pecorino og sort pepper.</p>
+            <p class="allergens">Allergener: Gluten, melk, egg</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Fusilloni Carbonara</h3><span class="price">349 KR</span></div>
+            <p>Klassisk romersk carbonara med sprøstekt guanciale, pecorino, egg og sort pepper. Kremet uten fløte.</p>
+            <p class="allergens">Allergener: Gluten, melk, egg</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Busiate Pesto Siciliano</h3><span class="price">329 KR</span></div>
+            <p>Busiate med siciliansk pesto og sprø ristede brødsmuler.</p>
+            <p class="allergens">Allergener: Gluten, nøtter (mandel, pistasj)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Ravioli med ricotta og spinat</h3><span class="price">339 KR</span></div>
+            <p>Håndlagde ravioli fylt med ricotta og spinat, servert med spinatkrem og lagret ricottakrem.</p>
+            <p class="allergens">Allergener: Gluten, melk, egg</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Caserecce med pistasj og salsiccia</h3><span class="price">349 KR</span></div>
+            <p>Caserecce med pistasjkrem, italiensk salsiccia med fennikelfrø og røkt scamorza-fondue.</p>
+            <p class="allergens">Allergener: Gluten, melk, nøtter (pistasj)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Pappardelle med lammeragù</h3><span class="price">369 KR</span></div>
+            <p>Fersk pappardelle med langtidskokt lammeragù og beurre noisette.</p>
+            <p class="allergens">Allergener: Gluten, melk, selleri</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Spaghetto med ramsløk og parmesanfondue</h3><span class="price">369 KR</span></div>
+            <p>Spaghetti med ramsløk, Parmigiano Reggiano-fondue og ristede brødsmuler.</p>
+            <p class="allergens">Allergener: Gluten, melk</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Risotto allo Scoglio</h3><span class="price">379 KR</span></div>
+            <p>Sjømatrisotto med blåskjell, reker og blekksprut, toppet med fennikelpesto.</p>
+            <p class="allergens">Allergener: Bløtdyr, skalldyr, fisk, sulfitt</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Lasagne</h3><span class="price">375 KR</span></div>
+            <p>Hjemmelaget lasagne med langtidskokt kjøttragù, béchamel og ost.</p>
+            <p class="allergens">Allergener: Gluten, melk, selleri, egg</p>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="dessert" role="tabpanel" hidden>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Tiramisù</h3><span class="price">179 KR</span></div>
+            <p>Klassisk italiensk dessert med espresso, mascarponekrem og kakao.</p>
+            <p class="allergens">Allergener: Gluten, melk, egg</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Cannolo Siciliano</h3><span class="price">179 KR</span></div>
+            <p>Tradisjonell siciliansk cannolo fylt med søt ricottakrem.</p>
+            <p class="allergens">Allergener: Gluten, melk, egg</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-head"><h3>Pistasj Panna Cotta</h3><span class="price">179 KR</span></div>
+            <p>Silkemyk panna cotta toppet med siciliansk pistasjkrem.</p>
+            <p class="allergens">Allergener: Melk, nøtter (pistasj)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="galleri">
+    <div class="container">
+      <p class="eyebrow reveal">Fra kjøkkenet</p>
+      <h2 class="reveal">Laget fra bunnen, hver dag</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item span-tall reveal"><img src="assets/carpaccio.jpg" alt="Oksecarpaccio med sennep, ruccola og parmesan" loading="lazy" width="1600" height="2133"></div>
+      <div class="gallery-item reveal"><img src="assets/burrata-carbonara.jpg" alt="Burrata og carbonara servert hos Pasta Vino" loading="lazy" width="900" height="675"></div>
+      <div class="gallery-item reveal"><img src="assets/tartare.jpg" alt="Biff tartar med parmesanchips" loading="lazy" width="1600" height="2133"></div>
+      <div class="gallery-item span-wide reveal"><img src="assets/pasta-spread.jpg" alt="Utvalg av ferske pastaretter hos Pasta Vino" loading="lazy" width="900" height="675"></div>
+      <div class="gallery-item reveal"><img src="assets/scampi.jpg" alt="Scampi med hvitløk og chili" loading="lazy" width="900" height="1201"></div>
+      <div class="gallery-item reveal"><img src="assets/ravioli.jpg" alt="Hjemmelaget ravioli med parmesan" loading="lazy" width="1600" height="2134"></div>
+      <div class="gallery-item span-wide reveal"><img src="assets/interior-wine-wall.jpg" alt="Vinhylle og galleri av bilder på veggen hos Pasta Vino" loading="lazy" width="2160" height="1500"></div>
+    </div>
+  </section>
+
+  <section class="visit" id="besok">
+    <div class="container visit-grid">
+      <div class="visit-hours reveal">
+        <p class="eyebrow eyebrow-light">Åpningstider</p>
+        <h2 class="section-title-light">Vi anbefaler å reservere bord</h2>
+        <p class="visit-note">Vi elsker å ta imot gjestene våre, men anbefaler gjerne å reservere bord på forhånd for å sikre den beste opplevelsen hos oss.</p>
+        <table class="hours-table">
+          <tbody>
+            <tr><th>Mandag</th><td>15:00 &ndash; 21:30</td></tr>
+            <tr><th>Tirsdag</th><td>15:00 &ndash; 21:30</td></tr>
+            <tr><th>Onsdag</th><td>15:00 &ndash; 21:30</td></tr>
+            <tr><th>Torsdag</th><td>15:00 &ndash; 21:30</td></tr>
+            <tr><th>Fredag</th><td>15:00 &ndash; 22:30</td></tr>
+            <tr><th>Lørdag</th><td>15:00 &ndash; 22:30</td></tr>
+            <tr><th>Søndag</th><td>15:00 &ndash; 21:30</td></tr>
+          </tbody>
+        </table>
+        <a href="https://booking.gastroplanner.no/pastavino/t" class="btn btn-accent" target="_blank" rel="noopener">Book bord</a>
+      </div>
+      <div class="visit-contact reveal">
+        <p class="eyebrow eyebrow-light">Besøk oss</p>
+        <h2 class="section-title-light">Stølegaten 15</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Adresse</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=St%C3%B8legaten+15%2C+5003+Bergen" target="_blank" rel="noopener">Stølegaten 15, 5003 Bergen</a>
+          </li>
+          <li>
+            <span class="contact-label">Telefon</span>
+            <a href="tel:+4740038157">40 03 81 57</a>
+          </li>
+        </ul>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=St%C3%B8legaten+15,+5003+Bergen&output=embed"
+            width="100%" height="100%" style="border:0" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Kart til Pasta Vino, Stølegaten 15, Bergen"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer">
+    <div class="container closer-inner reveal">
+      <h2>Besøk Pasta Vino i Sandviken og opplev fersk pasta, klassiske italienske retter og hyggelig atmosfære.</h2>
+      <div class="closer-actions">
+        <a href="https://booking.gastroplanner.no/pastavino/t" class="btn btn-accent btn-lg" target="_blank" rel="noopener">Book bord</a>
+        <a href="https://givn.no/shop/pastavino" class="btn btn-ghost-dark btn-lg" target="_blank" rel="noopener">Kjøp gavekort</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-white.png" alt="Pasta Vino" class="footer-logo">
+      <p>Et naturlig stopp i Sandviken. Fersk pasta, gode råvarer og litt italiensk sjel.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Utforsk</h3>
+      <ul>
+        <li><a href="#meny">Meny</a></li>
+        <li><a href="#om-oss">Om oss</a></li>
+        <li><a href="#besok">Åpningstider</a></li>
+        <li><a href="https://givn.no/shop/pastavino" target="_blank" rel="noopener">Kjøp gavekort</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Kontakt</h3>
+      <ul>
+        <li><a href="tel:+4740038157">40 03 81 57</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=St%C3%B8legaten+15%2C+5003+Bergen" target="_blank" rel="noopener">Stølegaten 15, 5003 Bergen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Pasta Vino</p>
+    <p>Nettside levert av <a href="https://dmarketing.no" target="_blank" rel="noopener">Dietrichs Marketing</a></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
