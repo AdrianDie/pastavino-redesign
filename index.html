@@ -11,11 +11,11 @@
 <link rel="apple-touch-icon" href="assets/favicon-192.png">
 <meta property="og:title" content="Pasta Vino – Italiensk restaurant i Sandviken, Bergen">
 <meta property="og:description" content="Fersk pasta, gode råvarer og ekte italienske smaker. Et naturlig stopp i Sandviken.">
-<meta property="og:image" content="assets/hero-interior.jpg">
+<meta property="og:image" content="assets/hero-interior.webp">
 <meta property="og:type" content="restaurant">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/Fraunces-700-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/SchibstedGrotesk-400-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/hero-interior.webp" fetchpriority="high">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
 <header class="site-header" id="siteHeader">
   <div class="header-inner container">
     <a href="#" class="logo-link" aria-label="Pasta Vino, til toppen">
-      <img src="assets/logo-white.png" alt="Pasta Vino" class="logo-img">
+      <img src="assets/logo-white.webp" alt="Pasta Vino" class="logo-img" width="160" height="160">
     </a>
     <nav class="main-nav" id="mainNav">
       <button class="nav-close" id="navClose" aria-label="Lukk meny">&times;</button>
@@ -48,14 +48,14 @@
 
   <section class="hero" id="top">
     <div class="hero-bg">
-      <img src="assets/hero-interior.jpg" alt="Interiør hos Pasta Vino i Sandviken" width="2160" height="1690">
+      <img src="assets/hero-interior.webp" alt="Interiør hos Pasta Vino i Sandviken" width="2160" height="1690" fetchpriority="high">
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content container">
-      <p class="hero-kicker reveal">Sandviken, Bergen</p>
-      <h1 class="hero-title reveal">Fersk pasta.<br><span class="accent-text">Ekte italiensk</span> stemning.</h1>
-      <p class="hero-lead reveal">Pasta Vino er et hverdagssted med god mat, god stemning og litt italiensk sjel. Et naturlig stopp i Sandviken.</p>
-      <div class="hero-actions reveal">
+      <p class="hero-kicker">Sandviken, Bergen</p>
+      <h1 class="hero-title">Fersk pasta.<br><span class="accent-text">Ekte italiensk</span> stemning.</h1>
+      <p class="hero-lead">Pasta Vino er et hverdagssted med god mat, god stemning og litt italiensk sjel. Et naturlig stopp i Sandviken.</p>
+      <div class="hero-actions">
         <a href="https://booking.gastroplanner.no/pastavino/t" class="btn btn-accent btn-lg" target="_blank" rel="noopener">Book bord</a>
         <a href="#meny" class="btn btn-ghost btn-lg">Se menyen</a>
       </div>
@@ -68,7 +68,7 @@
   <section class="about" id="om-oss">
     <div class="container about-grid">
       <div class="about-media reveal">
-        <img src="assets/antipasti-board.jpg" alt="Antipastitallerken med parmaskinke, oliven og ost hos Pasta Vino" loading="lazy" width="900" height="1201">
+        <img src="assets/antipasti-board.webp" alt="Antipastitallerken med parmaskinke, oliven og ost hos Pasta Vino" loading="lazy" width="900" height="1201">
         <div class="about-media-frame"></div>
       </div>
       <div class="about-text">
@@ -206,13 +206,13 @@
       <h2 class="reveal">Laget fra bunnen, hver dag</h2>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item span-tall reveal"><img src="assets/carpaccio.jpg" alt="Oksecarpaccio med sennep, ruccola og parmesan" loading="lazy" width="1600" height="2133"></div>
+      <div class="gallery-item span-tall reveal"><img src="assets/carpaccio.webp" alt="Oksecarpaccio med sennep, ruccola og parmesan" loading="lazy" width="1600" height="2133"></div>
       <div class="gallery-item reveal"><img src="assets/burrata-carbonara.jpg" alt="Burrata og carbonara servert hos Pasta Vino" loading="lazy" width="900" height="675"></div>
-      <div class="gallery-item reveal"><img src="assets/tartare.jpg" alt="Biff tartar med parmesanchips" loading="lazy" width="1600" height="2133"></div>
+      <div class="gallery-item reveal"><img src="assets/tartare.webp" alt="Biff tartar med parmesanchips" loading="lazy" width="1600" height="2133"></div>
       <div class="gallery-item span-wide reveal"><img src="assets/pasta-spread.jpg" alt="Utvalg av ferske pastaretter hos Pasta Vino" loading="lazy" width="900" height="675"></div>
-      <div class="gallery-item reveal"><img src="assets/scampi.jpg" alt="Scampi med hvitløk og chili" loading="lazy" width="900" height="1201"></div>
-      <div class="gallery-item reveal"><img src="assets/ravioli.jpg" alt="Hjemmelaget ravioli med parmesan" loading="lazy" width="1600" height="2134"></div>
-      <div class="gallery-item span-wide reveal"><img src="assets/interior-wine-wall.jpg" alt="Vinhylle og galleri av bilder på veggen hos Pasta Vino" loading="lazy" width="2160" height="1500"></div>
+      <div class="gallery-item reveal"><img src="assets/scampi.webp" alt="Scampi med hvitløk og chili" loading="lazy" width="900" height="1201"></div>
+      <div class="gallery-item reveal"><img src="assets/ravioli.webp" alt="Hjemmelaget ravioli med parmesan" loading="lazy" width="1600" height="2134"></div>
+      <div class="gallery-item span-wide reveal"><img src="assets/interior-wine-wall.webp" alt="Vinhylle og galleri av bilder på veggen hos Pasta Vino" loading="lazy" width="2160" height="1500"></div>
     </div>
   </section>
 
@@ -274,7 +274,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <img src="assets/logo-white.png" alt="Pasta Vino" class="footer-logo">
+      <img src="assets/logo-white.webp" alt="Pasta Vino" class="footer-logo" width="160" height="160">
       <p>Et naturlig stopp i Sandviken. Fersk pasta, gode råvarer og litt italiensk sjel.</p>
     </div>
     <div class="footer-col">
