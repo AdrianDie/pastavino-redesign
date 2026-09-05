@@ -518,6 +518,9 @@ p{ margin: 0 0 1em; }
 .reviews-inner h2{ font-size: clamp(28px, 3.6vw, 42px); color: var(--ink); margin-bottom: 40px; }
 
 .rating-display{ margin-bottom: 56px; }
+.rating-grid{ display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+.rating-block{ display: block; text-decoration: none; color: inherit; transition: opacity .2s ease; }
+.rating-block:hover{ opacity: .72; }
 .star-rating{ position: relative; display: inline-block; width: 116px; height: 20px; }
 .star-row{ width: 116px; height: 20px; display: block; }
 .star-row-track{ fill: #e4ddd0; }
