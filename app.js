@@ -1,6 +1,25 @@
 (function () {
   "use strict";
 
+  /* Hero video: some browsers/extensions don't honor the autoplay
+     attribute reliably, so force play() as a fallback. Retries once
+     on the page's first click/scroll/touch in case autoplay was
+     blocked outright (then requires a user gesture). */
+  var heroVideo = document.getElementById("heroVideo");
+  if (heroVideo) {
+    var tryPlay = function () {
+      var p = heroVideo.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(function () {
+          ["click", "scroll", "touchstart", "keydown"].forEach(function (evt) {
+            document.addEventListener(evt, tryPlay, { once: true, passive: true });
+          });
+        });
+      }
+    };
+    tryPlay();
+  }
+
   /* Header: solid background after scrolling past hero start */
   var header = document.getElementById("siteHeader");
   function onScroll() {
