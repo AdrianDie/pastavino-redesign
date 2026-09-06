@@ -389,6 +389,7 @@ p{ margin: 0 0 1em; }
   aspect-ratio: 900 / 1201;
   object-fit: cover;
   width: 100%;
+  height: auto;
   display: block;
 }
 .about-media-accent{
