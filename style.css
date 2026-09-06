@@ -319,17 +319,17 @@ p{ margin: 0 0 1em; }
 @media (max-width: 600px){
   .hero-bg video{ object-position: 60% 15%; }
 }
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(16,18,19,.55) 0%, rgba(16,18,19,.6) 40%, rgba(16,18,19,.95) 72%, rgba(16,18,19,.97) 100%);
+}
 .hero-content{
   position: relative;
   z-index: 1;
   padding-top: 110px;
   padding-bottom: 80px;
   max-width: 720px;
-}
-.hero-title{
-  font-size: clamp(38px, 6.2vw, 74px);
-  font-weight: 700;
-  margin-bottom: .35em;
 }
 .hero-kicker{
   text-transform: uppercase;
@@ -339,12 +339,15 @@ p{ margin: 0 0 1em; }
   color: var(--gold);
   margin-bottom: 18px;
 }
+.hero-title{
+  font-size: clamp(38px, 6.2vw, 74px);
+  font-weight: 700;
+  margin-bottom: .35em;
+}
 .hero-actions{
   display: flex;
-  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 32px;
 }
 
 .scroll-cue{
