@@ -344,13 +344,6 @@ p{ margin: 0 0 1em; }
   font-weight: 700;
   margin-bottom: .35em;
 }
-.accent-text{ color: var(--gold); font-style: italic; }
-.hero-lead{
-  font-size: clamp(16px, 2vw, 19px);
-  color: rgba(255,255,255,.88);
-  max-width: 46ch;
-  margin-bottom: 2em;
-}
 .hero-actions{
   display: flex;
   gap: 16px;
@@ -384,6 +377,8 @@ p{ margin: 0 0 1em; }
 }
 
 /* ---------- About ---------- */
+.hero-note{ background: var(--cream); padding: 56px 24px; text-align: center; }
+.hero-note-text{ max-width: 46ch; margin: 0 auto; font-size: clamp(16px, 2vw, 19px); color: var(--ink); }
 .about{ padding: 120px 0; background: var(--cream); }
 .about-grid{
   display: grid;
