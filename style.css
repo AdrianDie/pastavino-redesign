@@ -353,28 +353,30 @@ p{ margin: 0 0 1em; }
 
 .scroll-cue{
   position: absolute;
-  bottom: 34px;
+  bottom: 36px;
   left: 50%;
   transform: translateX(-50%);
-  width: 26px;
-  height: 42px;
-  border: 1.5px solid rgba(255,255,255,.55);
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+  height: 22px;
   z-index: 1;
 }
-.scroll-cue span{
+.scroll-cue-arrow{
   position: absolute;
-  top: 8px; left: 50%;
-  width: 4px; height: 4px;
-  margin-left: -2px;
-  background: #fff;
-  border-radius: 50%;
-  animation: scrollcue 1.8s ease infinite;
+  top: 0;
+  width: 22px;
+  height: 11px;
+  color: rgba(255,255,255,.75);
+  animation: scrollcue 1.6s ease infinite;
 }
+.scroll-cue-arrow-2{ top: 8px; animation-delay: .25s; }
 @keyframes scrollcue{
-  0%{ opacity: 1; transform: translateY(0); }
-  70%{ opacity: 0; transform: translateY(14px); }
-  100%{ opacity: 0; transform: translateY(14px); }
+  0%{ opacity: 0; transform: translateY(-6px); }
+  40%{ opacity: 1; transform: translateY(0); }
+  80%{ opacity: 0; transform: translateY(6px); }
+  100%{ opacity: 0; transform: translateY(6px); }
 }
 
 /* ---------- About ---------- */
