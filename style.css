@@ -303,10 +303,7 @@ p{ margin: 0 0 1em; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 55% 25%;
-}
-@media (max-width: 600px){
-  .hero-bg video{ object-position: 60% 15%; }
+  object-position: 50% 50%;
 }
 .hero-intro{
   background: var(--cream);
