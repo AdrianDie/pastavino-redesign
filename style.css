@@ -130,13 +130,12 @@
 /* ===== Pasta Vino — redesign ===== */
 
 :root{
-  --maroon: #92281B;
-  --maroon-dark: #6E1E14;
+  --maroon: #C1341F;
+  --maroon-dark: #91271A;
   --forest: #295A3A;
-  --forest-light: #3C7350;
   --gold: #D99B52;
-  --ink: #141618;
-  --ink-darker: #101213;
+  --ink: #1B3524;
+  --ink-darker: #122318;
   --ink-panel: #303133;
   --cream: #FEF9F3;
   --cream-2: #F7F1E8;
@@ -203,7 +202,7 @@ p{ margin: 0 0 1em; }
 .btn-ghost-dark{ background: transparent; color: var(--cream); border-color: rgba(255,255,255,.4); }
 .btn-ghost-dark:hover{ background: rgba(255,255,255,.1); border-color: #fff; }
 .btn-outline{ background: transparent; color: var(--maroon); border-color: var(--maroon); }
-.btn-outline:hover{ background: rgba(146,40,27,.08); }
+.btn-outline:hover{ background: rgba(193,52,31,.08); }
 .btn-lg{ padding: 16px 34px; font-size: 16px; }
 
 .text-link{
@@ -402,7 +401,7 @@ p{ margin: 0 0 1em; }
   object-fit: cover;
   border-radius: 4px;
   border: 6px solid var(--cream);
-  box-shadow: 0 20px 44px -14px rgba(20, 22, 24, .4);
+  box-shadow: 0 20px 44px -14px rgba(27, 53, 36, .4);
 }
 .about-text h2{
   font-size: clamp(28px, 3.6vw, 42px);
@@ -594,7 +593,7 @@ p{ margin: 0 0 1em; }
   letter-spacing: .12em;
   font-size: 11.5px;
   font-weight: 700;
-  color: var(--forest-light);
+  color: var(--gold);
   margin-bottom: 4px;
 }
 .contact-list a{ font-size: 17px; font-weight: 500; }
