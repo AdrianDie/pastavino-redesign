@@ -130,8 +130,8 @@
 /* ===== Pasta Vino — redesign ===== */
 
 :root{
-  --maroon: #C1341F;
-  --maroon-dark: #91271A;
+  --maroon: #805E37;
+  --maroon-dark: #5C4429;
   --forest: #295A3A;
   --gold: #D99B52;
   --ink: #1B3524;
@@ -202,7 +202,7 @@ p{ margin: 0 0 1em; }
 .btn-ghost-dark{ background: transparent; color: var(--cream); border-color: rgba(255,255,255,.4); }
 .btn-ghost-dark:hover{ background: rgba(255,255,255,.1); border-color: #fff; }
 .btn-outline{ background: transparent; color: var(--maroon); border-color: var(--maroon); }
-.btn-outline:hover{ background: rgba(193,52,31,.08); }
+.btn-outline:hover{ background: rgba(128,94,55,.08); }
 .btn-lg{ padding: 16px 34px; font-size: 16px; }
 
 .text-link{
