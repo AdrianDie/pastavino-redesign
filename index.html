@@ -13,7 +13,8 @@
 <meta property="og:description" content="Fersk pasta, gode råvarer og ekte italienske smaker. Et naturlig stopp i Sandviken.">
 <meta property="og:image" content="assets/hero-interior.webp">
 <meta property="og:type" content="restaurant">
-<link rel="preload" as="image" href="assets/hero-poster.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-poster.webp" fetchpriority="high" media="(min-width: 721px)">
+<link rel="preload" as="image" href="assets/hand-plating.webp" fetchpriority="high" media="(max-width: 720px)">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/ArchivoNarrow-700-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/EBGaramond-400-latin.woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
@@ -50,10 +51,12 @@
 
   <section class="hero" id="top">
     <div class="hero-bg">
-      <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.webp" aria-hidden="true">
+      <video id="heroVideo" muted loop playsinline preload="none" poster="assets/hero-poster.webp" aria-hidden="true">
         <source src="assets/hero-loop.mp4" type="video/mp4">
       </video>
+      <img class="hero-bg-mobile" src="assets/hand-plating.webp" alt="" aria-hidden="true" width="1400" height="1867">
     </div>
+    <p class="hero-mobile-heading">Laget fra bunnen,<br>hver dag</p>
     <a href="#hero-intro" class="scroll-cue" aria-label="Scroll ned">
       <span></span>
     </a>

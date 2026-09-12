@@ -1,12 +1,12 @@
 (function () {
   "use strict";
 
-  /* Hero video: some browsers/extensions don't honor the autoplay
-     attribute reliably, so force play() as a fallback. Retries once
-     on the page's first click/scroll/touch in case autoplay was
-     blocked outright (then requires a user gesture). */
+  /* Hero video: replaced by a static image below 720px (see CSS), so
+     skip loading/playing the 1.9MB file there entirely - it's hidden
+     but would otherwise still download and play in the background. */
   var heroVideo = document.getElementById("heroVideo");
-  if (heroVideo) {
+  if (heroVideo && window.matchMedia("(min-width: 721px)").matches) {
+    heroVideo.preload = "auto";
     var tryPlay = function () {
       var p = heroVideo.play();
       if (p && typeof p.catch === "function") {
