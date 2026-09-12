@@ -149,7 +149,7 @@ p{ margin: 0 0 1em; }
   gap: 20px;
 }
 .logo-link{ display: block; flex-shrink: 0; }
-.logo-img{ height: clamp(26px, 4vw, 36px); width: auto; transition: filter .3s ease; }
+.logo-img{ height: clamp(32px, 5vw, 44px); width: auto; transition: filter .3s ease; }
 
 .main-nav ul{
   display: flex;
@@ -546,7 +546,7 @@ p{ margin: 0 0 1em; }
   padding-bottom: 56px;
   border-bottom: 1px solid var(--ink-15);
 }
-.footer-logo{ height: 40px; width: auto; margin-bottom: 18px; filter: brightness(0); }
+.footer-logo{ height: 52px; width: auto; margin-bottom: 18px; filter: brightness(0); }
 .footer-brand p{ max-width: 34ch; font-size: 14.5px; }
 .footer-col h3{
   font-family: var(--font-display);
