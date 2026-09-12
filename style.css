@@ -98,17 +98,18 @@ p{ margin: 0 0 1em; }
   text-transform: uppercase;
   letter-spacing: .14em;
   border: 2px solid var(--accent);
-  background: transparent;
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--canvas);
   transition: background .2s ease, color .2s ease, border-color .2s ease;
   cursor: pointer;
   white-space: nowrap;
 }
-.btn:hover{ background: var(--accent); color: var(--canvas); }
+.btn:hover{ background: transparent; color: var(--accent); }
 .btn-lg{ padding: 22px 38px; font-size: 15px; }
 
 .text-link{
   display: inline-block;
+  align-self: center;
   background: none;
   border: none;
   border-radius: 0;
@@ -190,8 +191,8 @@ p{ margin: 0 0 1em; }
 }
 .nav-close{ display: none; }
 
-.nav-cta{ border-color: #fff; color: #fff; }
-.nav-cta:hover{ background: #fff; color: var(--ink); }
+.nav-cta{ background: #fff; border-color: #fff; color: var(--ink); }
+.nav-cta:hover{ background: transparent; color: #fff; }
 
 .site-header.scrolled{
   background: var(--canvas);
@@ -200,8 +201,8 @@ p{ margin: 0 0 1em; }
 }
 .site-header.scrolled .logo-img{ filter: brightness(0); }
 .site-header.scrolled .nav-link{ color: var(--ink); }
-.site-header.scrolled .nav-cta{ border-color: var(--accent); color: var(--accent); }
-.site-header.scrolled .nav-cta:hover{ background: var(--accent); color: var(--canvas); }
+.site-header.scrolled .nav-cta{ background: var(--accent); border-color: var(--accent); color: var(--canvas); }
+.site-header.scrolled .nav-cta:hover{ background: transparent; color: var(--accent); }
 .site-header.scrolled .hamburger span{ background: var(--ink); }
 
 /* ---------- Hero ---------- */
@@ -518,7 +519,7 @@ p{ margin: 0 0 1em; }
   border-radius: 0;
   overflow: hidden;
   border: 1px solid var(--ink-15);
-  filter: grayscale(1) contrast(1.05);
+  filter: grayscale(.5) contrast(1.05);
 }
 
 /* ---------- Closer ---------- */
@@ -667,6 +668,13 @@ p{ margin: 0 0 1em; }
 
   .hero-bg video{ display: none; }
   .hero-bg-mobile{ display: block; }
+  #top .hero-bg::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.55) 0%, rgba(0,0,0,.14) 45%, rgba(0,0,0,0) 75%);
+    pointer-events: none;
+  }
   .hero-mobile-heading{
     display: block;
     position: absolute;
@@ -681,5 +689,14 @@ p{ margin: 0 0 1em; }
     line-height: 1.25;
     color: #fff;
     text-shadow: 0 2px 20px rgba(0,0,0,.55);
+  }
+  #top ~ .hero-intro .hero-title{
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
   }
 }
