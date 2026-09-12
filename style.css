@@ -224,8 +224,6 @@ p{ margin: 0 0 1em; }
   object-fit: cover;
   object-position: 50% 50%;
 }
-.hero-bg video{ object-position: 50% 0%; }
-.hero-bg-mobile{ display: none; }
 .hero-mobile-heading{ display: none; }
 .hero-intro{
   background: var(--canvas);
@@ -667,8 +665,6 @@ p{ margin: 0 0 1em; }
   .about-media-accent{ right: -16px; bottom: -16px; width: 44%; border-width: 4px; }
   .menu-item-head{ flex-direction: column; gap: 2px; align-items: flex-start; }
 
-  .hero-bg video{ display: none; }
-  .hero-bg-mobile{ display: block; }
   #top .hero-bg::after{
     content: "";
     position: absolute;

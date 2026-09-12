@@ -1,11 +1,8 @@
 (function () {
   "use strict";
 
-  /* Hero video: replaced by a static image below 720px (see CSS), so
-     skip loading/playing the 1.9MB file there entirely - it's hidden
-     but would otherwise still download and play in the background. */
   var heroVideo = document.getElementById("heroVideo");
-  if (heroVideo && window.matchMedia("(min-width: 721px)").matches) {
+  if (heroVideo) {
     heroVideo.preload = "auto";
     var tryPlay = function () {
       var p = heroVideo.play();
