@@ -224,6 +224,7 @@ p{ margin: 0 0 1em; }
   object-fit: cover;
   object-position: 50% 50%;
 }
+.hero-bg video{ object-position: 50% 0%; }
 .hero-bg-mobile{ display: none; }
 .hero-mobile-heading{ display: none; }
 .hero-intro{
