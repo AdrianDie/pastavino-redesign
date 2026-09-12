@@ -101,4 +101,15 @@
       el.classList.add("is-visible");
     });
   }
+
+  /* Gallery: reveal extra photos on click instead of showing all at once */
+  var galleryMoreBtn = document.getElementById("galleryMoreBtn");
+  if (galleryMoreBtn) {
+    galleryMoreBtn.addEventListener("click", function () {
+      document.querySelectorAll(".gallery-item-extra").forEach(function (el) {
+        el.removeAttribute("hidden");
+      });
+      galleryMoreBtn.remove();
+    });
+  }
 })();

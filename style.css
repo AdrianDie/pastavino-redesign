@@ -39,6 +39,7 @@
   --ink-70: rgba(34,34,34,.7);
   --ink-45: rgba(34,34,34,.45);
   --ink-15: rgba(34,34,34,.15);
+  --accent: #6E2A3A;
 
   --font-display: "Archivo Narrow", "Arial Narrow", sans-serif;
   --font-body: "EB Garamond", Garamond, Georgia, serif;
@@ -123,7 +124,7 @@ p{ margin: 0 0 1em; }
   letter-spacing: .12em;
   font-size: 15px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent);
   margin: 0 0 .9em;
 }
 /* ---------- Header ---------- */
@@ -228,7 +229,7 @@ p{ margin: 0 0 1em; }
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent);
   margin-bottom: 18px;
 }
 .hero-title{ margin-bottom: 0; }
@@ -298,7 +299,7 @@ p{ margin: 0 0 1em; }
   box-shadow: 0 20px 44px -14px rgba(34, 34, 34, .4);
 }
 .about-text h2{ color: var(--ink); }
-.about-text p{
+.about-text p:not(.eyebrow){
   color: var(--ink-70);
   font-size: 17px;
   max-width: 56ch;
@@ -343,8 +344,8 @@ p{ margin: 0 0 1em; }
 }
 .menu-tab:hover{ color: var(--ink); }
 .menu-tab.is-active{
-  color: var(--ink);
-  border-bottom-color: var(--ink);
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .menu-panels{ max-width: 880px; margin: 0 auto; }
@@ -373,7 +374,7 @@ p{ margin: 0 0 1em; }
 }
 .menu-item .price{
   font-family: var(--font-body);
-  color: var(--ink);
+  color: var(--accent);
   font-weight: 400;
   font-size: 18px;
   white-space: nowrap;
@@ -392,7 +393,7 @@ p{ margin: 0 0 1em; }
 .menu-more{ text-align: center; margin-top: 48px; }
 
 /* ---------- Gallery ---------- */
-.gallery{ padding: 120px 0 0; background: var(--canvas); }
+.gallery{ padding: 120px 0 100px; background: var(--canvas); }
 .gallery > .container{ text-align: center; margin-bottom: 56px; }
 .gallery h2{ color: var(--ink); }
 .gallery-grid{
@@ -407,6 +408,7 @@ p{ margin: 0 0 1em; }
   transition: transform .6s ease;
 }
 .gallery-item:hover img{ transform: scale(1.06); }
+.gallery-more{ text-align: center; margin-top: 36px; }
 
 /* ---------- Reviews ---------- */
 .reviews{ background: var(--canvas); padding: 120px 0; }
@@ -421,7 +423,7 @@ p{ margin: 0 0 1em; }
 .star-row{ width: 116px; height: 20px; display: block; }
 .star-row-track{ fill: var(--ink-15); }
 .star-row-fill-wrap{ position: absolute; top: 0; left: 0; height: 20px; overflow: hidden; }
-.star-row-fill{ fill: var(--ink); }
+.star-row-fill{ fill: var(--accent); }
 .rating-number{
   font-family: var(--font-body);
   font-size: 23px;
@@ -448,7 +450,7 @@ p{ margin: 0 0 1em; }
 }
 .review-quote p{ font-size: 16px; color: var(--ink-70); margin: 0 0 14px; line-height: 1.55; }
 .review-quote footer{ font-size: 14px; font-weight: 400; color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 10px; }
-.review-quote .review-stars{ color: var(--ink); font-size: 13px; letter-spacing: 1px; font-weight: 400; }
+.review-quote .review-stars{ color: var(--accent); font-size: 13px; letter-spacing: 1px; font-weight: 400; }
 
 .reviews-actions{ display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
@@ -476,7 +478,7 @@ p{ margin: 0 0 1em; }
   font-family: var(--font-display);
   text-transform: uppercase;
   letter-spacing: .08em;
-  color: var(--ink);
+  color: var(--accent);
   font-weight: 700;
   font-size: 13px;
   width: 40%;
@@ -491,7 +493,7 @@ p{ margin: 0 0 1em; }
   letter-spacing: .1em;
   font-size: 12px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent);
   margin-bottom: 4px;
 }
 .contact-list a{ font-size: 17px; font-weight: 400; }
@@ -541,7 +543,7 @@ p{ margin: 0 0 1em; }
   letter-spacing: .1em;
   font-size: 13px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--accent);
   margin-bottom: 18px;
 }
 .footer-col ul{ display: flex; flex-direction: column; gap: 12px; }
@@ -637,7 +639,7 @@ p{ margin: 0 0 1em; }
   .review-quotes{ grid-template-columns: 1fr; }
   .reviews-actions{ flex-direction: column; align-items: stretch; }
   .reviews-actions .btn{ width: 100%; }
-  .gallery{ padding: 80px 0 0; }
+  .gallery{ padding: 80px 0 60px; }
   .hero{ min-height: 75vh; }
   .hero-intro{ padding: 64px 0 56px; }
   .hero-actions{ flex-direction: column; align-items: stretch; }
