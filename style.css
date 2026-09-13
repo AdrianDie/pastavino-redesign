@@ -643,7 +643,6 @@ p{ margin: 0 0 1em; }
     background: linear-gradient(to top, rgba(0,0,0,.55) 0%, rgba(0,0,0,.14) 45%, rgba(0,0,0,0) 75%);
     pointer-events: none;
   }
-  #top .hero-bg video{ object-fit: contain; background: #000; }
 }
 
 /* ================= Responsive ================= */
