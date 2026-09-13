@@ -636,6 +636,10 @@ p{ margin: 0 0 1em; }
   .hamburger{ display: flex; }
 
   .hero{ min-height: 90vh; }
+  #top .hero-bg video{
+    object-fit: contain;
+    background: var(--ink);
+  }
   #top .hero-bg::after{
     content: "";
     position: absolute;
