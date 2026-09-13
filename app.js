@@ -6,6 +6,7 @@
     if (window.matchMedia("(max-width: 900px)").matches) {
       heroVideo.poster = "assets/hero-poster-mobile.webp";
       heroVideo.querySelector("source").src = "assets/hero-loop-mobile.mp4";
+      heroVideo.load();
     }
     heroVideo.preload = "auto";
     var tryPlay = function () {
