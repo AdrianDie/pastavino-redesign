@@ -3,7 +3,7 @@
 
   var heroVideo = document.getElementById("heroVideo");
   if (heroVideo) {
-    if (window.matchMedia("(max-width: 720px)").matches) {
+    if (window.matchMedia("(max-width: 900px)").matches) {
       heroVideo.poster = "assets/hero-poster-mobile.webp";
       heroVideo.querySelector("source").src = "assets/hero-loop-mobile.mp4";
     }
