@@ -148,8 +148,9 @@ p{ margin: 0 0 1em; }
   justify-content: space-between;
   gap: 20px;
 }
-.logo-link{ display: block; flex-shrink: 0; }
+.logo-link{ display: block; flex-shrink: 0; position: relative; z-index: 201; }
 .logo-img{ height: clamp(32px, 5vw, 44px); width: auto; transition: filter .3s ease; }
+.logo-img-color{ display: none; }
 
 .main-nav ul{
   display: flex;
@@ -199,7 +200,8 @@ p{ margin: 0 0 1em; }
   padding: 16px 0;
   border-bottom-color: var(--ink-15);
 }
-.site-header.scrolled .logo-img{ filter: brightness(0); }
+.site-header.scrolled .logo-img{ display: none; }
+.site-header.scrolled .logo-img-color{ display: block; }
 .site-header.scrolled .nav-link{ color: var(--ink); }
 .site-header.scrolled .nav-cta{ background: var(--accent); border-color: var(--accent); color: var(--canvas); }
 .site-header.scrolled .nav-cta:hover{ background: transparent; color: var(--accent); }
@@ -575,7 +577,8 @@ p{ margin: 0 0 1em; }
 
 /* ================= Mobile full-screen nav takeover (Cutler signature) ================= */
 .site-header:has(.main-nav.is-open){ background: var(--canvas); border-bottom-color: var(--ink-15); }
-.site-header:has(.main-nav.is-open) .logo-img{ filter: brightness(0); }
+.site-header:has(.main-nav.is-open) .logo-img{ display: none; }
+.site-header:has(.main-nav.is-open) .logo-img-color{ display: block; }
 .site-header:has(.main-nav.is-open) .hamburger span{ background: var(--ink); }
 
 @media (max-width: 900px){
