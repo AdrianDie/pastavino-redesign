@@ -636,7 +636,7 @@ p{ margin: 0 0 1em; }
   .hamburger{ display: flex; }
 
   .hero{ min-height: 90vh; }
-  #top .hero-bg video{ object-fit: contain; background: #000; }
+  #top .hero-bg video{ object-fit: cover; }
   #top .hero-bg::after{
     content: "";
     position: absolute;
