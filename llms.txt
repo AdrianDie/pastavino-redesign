@@ -13,7 +13,11 @@
 - [Book a table](https://booking.gastroplanner.no/pastavino/t)
 - [Tripadvisor](https://no.tripadvisor.com/Restaurant_Review-g190502-d34550852-Reviews-Pastavino_Sandviken-Bergen_Hordaland_Western_Norway.html)
 
-## Pages
+## Pages in English
+
+- [Home (English)](https://pastavino.no/en/): menu with prices and allergens, opening hours, reviews, booking
+
+## Pages in Norwegian
 
 - [Home](https://pastavino.no/): menu, opening hours, booking
 - [Catering](https://pastavino.no/catering.html): Italian catering for events

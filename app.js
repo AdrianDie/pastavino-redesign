@@ -4,8 +4,9 @@
   var heroVideo = document.getElementById("heroVideo");
   if (heroVideo) {
     if (window.matchMedia("(max-width: 900px)").matches) {
-      heroVideo.poster = "assets/hero-poster-mobile.webp";
-      heroVideo.querySelector("source").src = "assets/hero-loop-mobile.mp4";
+      var assetBase = heroVideo.getAttribute("poster").replace(/hero-poster\.webp$/, "");
+      heroVideo.poster = assetBase + "hero-poster-mobile.webp";
+      heroVideo.querySelector("source").src = assetBase + "hero-loop-mobile.mp4";
       heroVideo.load();
     }
     heroVideo.preload = "auto";

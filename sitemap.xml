@@ -6,4 +6,8 @@
   <url>
     <loc>https://pastavino.no/catering.html</loc>
   </url>
+  <url>
+    <loc>https://pastavino.no/en/</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
