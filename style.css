@@ -362,6 +362,7 @@ p{ margin: 0 0 1em; }
 }
 
 .menu-panels{ max-width: 880px; margin: 0 auto; }
+.menu-takeaway{ text-align: center; margin-top: 64px; }
 .menu-panel{
   display: none;
   grid-template-columns: 1fr 1fr;
@@ -652,6 +653,15 @@ p{ margin: 0 0 1em; }
 }
 
 /* ================= Responsive ================= */
+@media (min-width: 901px) and (max-width: 1200px){
+  .main-nav ul{ gap: 18px; }
+  .nav-link{ letter-spacing: .08em; white-space: nowrap; }
+}
+@media (min-width: 901px) and (max-width: 1060px){
+  .main-nav ul{ gap: 12px; }
+  .nav-link{ font-size: 13px; letter-spacing: .04em; }
+  .nav-cta{ padding-inline: 18px; }
+}
 @media (max-width: 1024px){
   .about-grid{ grid-template-columns: 1fr; gap: 48px; }
   .about-media{ max-width: 420px; }
