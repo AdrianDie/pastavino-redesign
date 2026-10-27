@@ -670,6 +670,8 @@ p{ margin: 0 0 1em; }
 }
 
 @media (max-width: 720px){
+  .menu-tabs{ flex-wrap: nowrap; justify-content: space-between; }
+  .menu-tab{ padding: 14px 4px; font-size: 12px; letter-spacing: .06em; }
   .container{ padding: 0 20px; }
   .about, .menu-section, .visit, .closer, .reviews{ padding: 80px 0; }
   .review-quotes{ grid-template-columns: 1fr; }
